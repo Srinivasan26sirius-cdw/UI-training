@@ -1,0 +1,102 @@
+/*style for image-adjust starts*/
+.img-adjust 
+{
+    height:880px;
+    background-size:cover;
+}
+/*style for image-adjust ends*/
+
+/*style for box-container starts*/
+.box-container
+{
+    width:90%;
+    margin:auto;
+    padding-top:80px;
+    
+}
+/*style for box-container ends*/
+
+/*style for inside-container starts*/
+.inside-container
+{
+    display:inline-block;
+    width:31%;
+    padding:13px;
+}
+/*style for inside-container ends*/
+
+/*style for image-caption starts*/
+.image-caption{
+    font-family: 'Roboto', sans-serif;
+    font-size:35px;
+    font-weight:300;
+    padding:5px 20px 0px 0px;
+   /* height:141px;*/
+}
+/*style for inside-container ends*/
+
+/*style for image-location starts*/
+.image-location
+{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight:500;   
+}
+/*style for image-location ends*/
+
+/*style for image-desc starts*/
+.image-desc
+{
+    font-family: 'Roboto',sans-serif;
+    font-weight:300;
+    font-size:20px;
+}
+
+/*style for image-desc starts*/
+
+/*style for enhancing-tn-motto starts*/
+.enchanting-tn-motto
+{
+    color:#840057;
+    width:60%;
+    margin:auto;
+    font-family:'Roboto,sans-serif';
+    font-weight:300;
+    font-size:70px;
+    text-align:center;
+    padding:80px 20px 20px 20px;
+}
+/*style for enhancing-tn-motto ends*/
+
+/*style for enhancing-tn-desc starts*/
+.enchanting-tn-desc
+{
+    width:77%;
+    margin:auto;
+    font-family: 'Roboto',sans-serif;
+    font-size:25px;
+    font-weight:300;
+    padding:40px 40px 80px 40px;
+    text-align:justify;
+    line-height:45px;
+
+}
+/*style for enhancing-tn-desc ends*/
+
+/*style for footer starts*/
+.foot
+{
+    width:90%;
+    margin:auto;
+    padding:30px 0px 30px 5px;
+    
+}
+/*style for footer ends*/
+
+/*style for foot-color starts*/
+.foot-colour
+{
+    background-color:#7a1655;
+    color:white;
+}
+/*style for foot-color ends*/
