@@ -1,0 +1,187 @@
+/*universal styling starts*/
+* {
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+/*universal styling ends*/
+header > div 
+{   
+    width:14%;
+    position:relative;
+    top:17px;
+}
+header > div >img{
+    max-width:100%;
+}
+/*image styling starts*/
+.card div img {
+    max-width: 100%;
+    aspect-ratio:2/2.4;
+}
+/*image styling starts*/
+
+/*body styling starts*/
+body {
+    background-color: #2a2b30;
+}
+/*body styling starts*/
+
+/*header styling starts*/
+header {
+    position: relative;
+    top: 60px;
+    width: 84%;
+    margin:0px auto;
+}
+/*header styling starts*/
+
+/*menu-icon styling starts*/
+.menu-icon {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    margin-left: auto;
+    border-radius: 100%;
+    background-color: #d8d8d8;
+}
+/*menu-icon styling starts*/
+
+/*dropdown-box styling starts*/
+.dropdown-box {
+    display:none;
+    width: 250px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 70px;
+    border-top: solid 15px #2a2b30;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #ffffff;
+}
+.dropdown-box>div {
+    padding: 10px;
+}
+
+.menu-icon:hover .dropdown-box {
+    display:inline-block;
+}
+
+.dropdown-box a {
+    text-decoration: none;
+    color:black;
+}
+
+.dropdown-box a:hover {
+    font-size: 18px;
+    font-weight: 700;
+    color:black;
+}
+
+/*dropdown-box styling ends*/
+
+/*outer-container styling starts*/
+.outer-container{
+    width: 88%;
+    position: relative;
+    top: 100px;
+    margin:0px 0px 180px 120px;
+}
+/*outer-container styling starts*/
+
+/*entire card container styling starts*/
+.card {
+    width: 24%;
+    padding: 17px;
+    position: relative;
+    margin:0px 10px 24px 0px;
+    display: inline-block;
+}
+
+.card i{
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    top: 35px;
+    font-size: 23px;
+    color: #88b282;
+}
+
+.card img {
+    height: auto;
+    padding: 60px 50px;
+    position: relative;
+    background-color: #24252a;
+}
+
+.size-style {
+    width: 55px;
+    height: 55px;
+    padding-top: 15px;
+    position: absolute;
+    right: 40px;
+    bottom: 125px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #88b282;
+}
+
+.cloth-type {
+    margin-top: 13px;
+    font-size: 23px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.cloth-price {
+    font-size: 22px;
+    margin-top: 5px;
+    color: #8d8d8e;
+}
+
+button {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 17px;
+    margin-top: 14px;
+    color: #8d8d8e;
+    border: solid 1.5px #8d8d8e;
+    background-color: #2a2b30;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #8d8d8e;
+    color:#2a2b30;
+}
+/*entire card container styling ends*/
+
+/*footer styling starts*/
+footer {
+    width: 100%;
+    padding: 13px;
+    position: fixed;
+    bottom: 0px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+footer div {
+    display: inline-block;
+    padding: 25px;
+}
+/*footer styling ends*/
