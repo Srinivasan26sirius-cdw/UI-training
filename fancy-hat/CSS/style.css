@@ -6,34 +6,28 @@
 }
 /*universal styling endts*/
 
-/*html, body styling starts*/
-html,body{
-    height:100%
-}
-/*html,body styling ends*/
-
-/*background styling starts*/
-.bg{
+/*html,body styling starts*/
+html
+{
     height:100%;
-    background-image: url('/Users/srinivasanr/Desktop/fancy-hat/images/background-image.png');
+}
+
+body{
+    height:100%;
+    background-image: url('../images/background-image.png');
     background-repeat:no-repeat;
     background-size:cover;
-    filter:brightness(80%);
+    background-blend-mode:overlay;
 }
-/*background styling ends*/
 
-/*menu-icon styling starts*/
-.menu-icon
-{
-    position:absolute;
-    left:0px;
-    top:37px;
-}
-/*menu-icon styling ends*/
+/*html ,body styling ends*/
 
 /*icon styling starts*/
 .icon-style
 {
+    position:absolute;
+    left:0px;
+    top:39px;
     font-size:40px;
     width:80px;
     height:60px;
@@ -95,27 +89,37 @@ html,body{
     color:white;
     padding:40px 40px 0px 50px;
     font-size:20px;
-    width:180px;
-    height:775px;
+    width:190px;
+    height:755px;
     border-radius:25px;
 }
 
-.menu-icon:hover .menu-display
+.icon-style:hover .menu-display
 {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
 }
 
-.menu-display > span{
-    text-align:center;
-    padding-bottom:25px;
+.menu-display > ul{
+    list-style-type:none;
+}
 
+.menu-display > ul >li{
+    text-align:center;
+    margin-bottom:25px;
+}
+ul > li:hover{
+    padding:0px;
+    cursor:pointer;
+    color:black;
+    background-color:white;
+    border-radius:25px;
 }
 /*menu-display styling ends*/
 
 /*caption styling starts*/
-.caption
+.description
 {
     position:absolute;
     bottom:60px;
@@ -128,7 +132,7 @@ html,body{
     line-height:120px;
 }
 
-.caption > span:nth-child(2)
+.description > div:nth-child(2)
 {
     font-size:150px;
 }
@@ -139,13 +143,22 @@ footer
 {
     display:flex;
     position:absolute;
-    bottom:15px;
-    right:20px;
+    bottom:20px;
+    right:23px;
     justify-content:space-between;
 
 }
 
-footer > div:nth-child(1){
+.fa-facebook
+{
+    color:white;
+    font-size:33px;
+    margin-top:4px;
+}
+
+.fa-twitter{
     padding-right:15px;
+    color:white;
+    font-size:40px;
 }
 /*footer styling starts*/
