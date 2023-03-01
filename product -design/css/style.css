@@ -1,0 +1,315 @@
+/*universal style starts*/
+*{
+    background-color:#000000;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+    font-family:"Roboto",sans-serif;
+}
+/*universal style ends*/
+
+/*image style starts*/
+img
+{
+    max-width:100%;
+}
+/*image style ends*/
+
+/*container style starts*/
+body > div{
+    width:78%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+/*container style ends*/
+
+/*header section  style starts*/
+header
+{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:140px;
+}
+
+.mail-style
+{
+    text-align:right;
+    color:white;
+    font-size:25px;
+    font-weight:500;
+    margin-top:35px;
+    margin-right:10px;
+}
+
+.name-style
+{
+    text-align:center;
+    color:white;
+    font-size:130px;
+    font-weight:300;
+    margin-top:50px;
+}
+
+.name-style > span
+{
+    font-weight:500;
+}
+
+.designation-style
+{
+    color:white;
+    font-size:40px;
+    font-weight:500;
+    margin-top:20px;
+    text-align:center;
+}
+
+.designation-style > span{
+    color:#4a90e4;
+}
+/*header section style ends*/
+
+/*image section style starts*/
+.image-section
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-bottom:150px;
+}
+.image-section > div{
+    width:400px;
+    margin:10px 24px;
+}
+/*image section style ends*/
+
+/*description section style ends*/
+.description
+{
+    color:#cecece;
+    font-size:45px;
+    font-weight:500;
+    text-align:center;
+    margin-top:150px;
+    margin-bottom:100px;
+}
+
+.description > span{
+    color:#b8e985;
+}
+/*description section style ends*/
+
+/*logo section style starts*/
+.logo-section
+{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.logo-section > div
+{
+    width:200px;
+}
+/*logo section style ends*/
+
+/*footer section style starts*/
+footer{
+    display:flex;
+    flex-direction:column;
+    margin-top:200px;
+    justify-content:space-between;
+}
+
+.line-bar
+{
+    display:flex;
+    justify-content:space-around;
+    width:24%;
+    margin:50px auto;
+}
+
+.line-bar > hr
+{
+    border:solid 0.5px white;
+     
+}
+
+.line-bar > hr:nth-child(1)
+{
+    width:33px;
+}
+
+.line-bar > hr:nth-child(2)
+{
+    width:210px;
+}
+
+.icon-section
+{
+    display:flex;
+    justify-content:space-between;
+    width:25%;
+    margin:50px auto;
+}
+
+.icon-section > div{
+    width:55px;
+}
+
+.motto
+{
+    text-align:center;
+    font-size:20px;
+    margin:25px 0px;
+}
+
+/*footer section style ends*/
+
+/*media query starts*/
+
+@media only screen and (max-width:600px)
+{
+    body > div{
+        width:90%;
+        margin:auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    header
+    {
+        display:flex;
+        flex-direction:column;
+        margin-bottom:50px;
+    }
+    .mail-style
+    {
+        text-align:center;
+        color:white;
+        font-size:15px;
+        font-weight:500;
+        margin:20px 0px;
+        order:3;
+    }
+    .name-style
+    {
+        text-align:center;
+        color:white;
+        font-size:45px;
+        font-weight:300;
+        margin-top:190px;
+    }
+    .name-style > span
+    {
+        font-weight:500;
+    }
+
+    .designation-style
+    {
+        color:white;
+        font-size:27px;
+        font-weight:500;
+        margin-top:20px;
+        text-align:center;
+    }
+   
+    .designation-style > span{
+        color:#4a90e4;
+    }
+
+    .image-section
+    {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin-bottom:50px;
+    }
+    .image-section > div
+    {
+        width:470px;
+        margin:10px 3px;
+    }
+    .description
+    {
+        color:#cecece;
+        font-size:28px;
+        font-weight:500;
+        text-align:center;
+        margin-top:10px;
+        margin-bottom:50px;
+    }
+
+    .description > span{
+        color:#b8e985;
+    }
+
+    .logo-section
+    {
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+
+    .logo-section > div
+    {
+        width:160px;
+        margin-bottom:65px;
+    }
+
+    footer{
+        display:flex;
+        flex-direction:column;
+        margin-top:50px;
+        justify-content:space-between;
+    }
+    
+    .line-bar
+    {
+        display:flex;
+        justify-content:space-around;
+        width:60%;
+        margin:50px auto;
+    }
+
+    .line-bar > hr
+    {
+        border:solid 0.5px white;
+        
+    }
+
+    .line-bar > hr:nth-child(1)
+    {
+        width:24px;
+    }
+
+    .line-bar > hr:nth-child(2)
+    {
+        width:140px;
+    }
+
+    .icon-section
+    {
+        display:flex;
+        justify-content:space-between;
+        width:95%;
+        margin:25px auto;
+    }
+
+    .icon-section > div{
+        width:50px;
+    }
+
+    .motto
+    {
+        text-align:center;
+        font-size:20px;
+        margin:22px 0px 35px;
+    }
+
+}
+
+/*media query ends*/
