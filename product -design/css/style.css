@@ -1,0 +1,256 @@
+/*universal style starts*/
+*{
+    background-color:#000000;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+    font-family:"Roboto",sans-serif;
+}
+/*universal style ends*/
+
+/*container style starts*/
+.outer-container{
+    width:78%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+/*container style ends*/
+
+/*header section  style starts*/
+header
+{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:140px;
+}
+
+.mail
+{
+    text-align:right;
+    color:white;
+    font-size:25px;
+    font-weight:500;
+    margin-top:35px;
+    margin-right:10px;
+}
+
+.name
+{
+    text-align:center;
+    color:white;
+    font-size:130px;
+    font-weight:300;
+    margin-top:50px;
+}
+
+.name > span
+{
+    font-weight:500;
+}
+
+.designation
+{
+    color:white;
+    font-size:40px;
+    font-weight:500;
+    margin-top:20px;
+    text-align:center;
+}
+
+.designation > span{
+    color:#4a90e4;
+}
+/*header section style ends*/
+
+/*image section style starts*/
+.image-section
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-bottom:150px;
+}
+.image-section > img{
+    width:418px;
+    margin:15px 13px;
+}
+/*image section style ends*/
+
+/*description section style ends*/
+.description
+{
+    color:#cecece;
+    font-size:45px;
+    font-weight:500;
+    text-align:center;
+    margin-top:150px;
+    margin-bottom:100px;
+}
+
+.description > span{
+    color:#b8e985;
+}
+/*description section style ends*/
+
+/*logo section style starts*/
+.logo-section
+{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.logo-section > img
+{
+    width:180px;
+}
+/*logo section style ends*/
+
+/*footer section style starts*/
+footer{
+    display:flex;
+    flex-direction:column;
+    margin-top:200px;
+    justify-content:space-between;
+}
+
+.line-bar
+{
+    display:flex;
+    justify-content:space-around;
+    width:22%;
+    margin:50px auto;
+}
+
+.line-bar > hr
+{
+    border:solid 1px #757575;
+     
+}
+
+.line-bar > hr:nth-child(1)
+{
+    width:31px;
+}
+
+.line-bar > hr:nth-child(2)
+{
+    width:200px;
+}
+
+.icon-section
+{
+    display:flex;
+    justify-content:space-between;
+    width:25%;
+    margin:50px auto;
+}
+
+.icon-section > img{
+    width:55px;
+}
+
+.motto
+{
+    text-align:center;
+    font-size:20px;
+    margin:25px 0px;
+}
+
+/*footer section style ends*/
+
+/*media query starts*/
+
+@media only screen and (max-width:600px)
+{
+    .outer-container{
+        width:90%;
+    }
+    header
+    {
+        margin-bottom:50px;
+    }
+    .mail
+    {
+        text-align:center;
+        font-size:15px;
+        margin:20px 0px;
+        order:3;
+    }
+    .name
+    {
+        font-size:45px;
+        margin-top:190px;
+    }
+
+    .designation
+    {
+
+        font-size:27px;
+        font-weight:500;
+        margin-top:20px;
+    }
+
+    .image-section
+    {
+        margin-bottom:50px;
+    }
+    .image-section > img
+    {
+        width:470px;
+        margin:10px 3px;
+    }
+    .description
+    {
+        font-size:28px;
+        margin-top:10px;
+        margin-bottom:50px;
+    }
+
+    .logo-section > img
+    {
+        width:160px;
+        margin-bottom:65px;
+    }
+
+    footer{
+        margin-top:50px;
+    }
+    
+    .line-bar
+    {
+        width:60%;
+        margin:50px auto;
+    }
+
+    .line-bar > hr:nth-child(1)
+    {
+        width:24px;
+    }
+
+    .line-bar > hr:nth-child(2)
+    {
+        width:140px;
+    }
+
+    .icon-section
+    {
+        width:95%;
+        margin:25px auto;
+    }
+
+    .icon-section > img{
+        width:50px;
+    }
+
+    .motto
+    {
+        margin:22px 0px 35px;
+    }
+
+}
+
+/*media query ends*/
