@@ -9,15 +9,8 @@
 }
 /*universal style ends*/
 
-/*image style starts*/
-img
-{
-    max-width:100%;
-}
-/*image style ends*/
-
 /*container style starts*/
-body > div{
+.outer-container{
     width:78%;
     margin:auto;
     display:flex;
@@ -34,7 +27,7 @@ header
     margin-bottom:140px;
 }
 
-.mail-style
+.mail
 {
     text-align:right;
     color:white;
@@ -44,7 +37,7 @@ header
     margin-right:10px;
 }
 
-.name-style
+.name
 {
     text-align:center;
     color:white;
@@ -53,12 +46,12 @@ header
     margin-top:50px;
 }
 
-.name-style > span
+.name > span
 {
     font-weight:500;
 }
 
-.designation-style
+.designation
 {
     color:white;
     font-size:40px;
@@ -67,7 +60,7 @@ header
     text-align:center;
 }
 
-.designation-style > span{
+.designation > span{
     color:#4a90e4;
 }
 /*header section style ends*/
@@ -80,9 +73,9 @@ header
     justify-content:space-around;
     margin-bottom:150px;
 }
-.image-section > div{
-    width:400px;
-    margin:10px 24px;
+.image-section > img{
+    width:418px;
+    margin:15px 13px;
 }
 /*image section style ends*/
 
@@ -110,9 +103,9 @@ header
     flex-wrap:wrap;
 }
 
-.logo-section > div
+.logo-section > img
 {
-    width:200px;
+    width:180px;
 }
 /*logo section style ends*/
 
@@ -128,24 +121,24 @@ footer{
 {
     display:flex;
     justify-content:space-around;
-    width:24%;
+    width:22%;
     margin:50px auto;
 }
 
 .line-bar > hr
 {
-    border:solid 0.5px white;
+    border:solid 1px #757575;
      
 }
 
 .line-bar > hr:nth-child(1)
 {
-    width:33px;
+    width:31px;
 }
 
 .line-bar > hr:nth-child(2)
 {
-    width:210px;
+    width:200px;
 }
 
 .icon-section
@@ -156,7 +149,7 @@ footer{
     margin:50px auto;
 }
 
-.icon-section > div{
+.icon-section > img{
     width:55px;
 }
 
@@ -173,112 +166,64 @@ footer{
 
 @media only screen and (max-width:600px)
 {
-    body > div{
+    .outer-container{
         width:90%;
-        margin:auto;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
     }
     header
     {
-        display:flex;
-        flex-direction:column;
         margin-bottom:50px;
     }
-    .mail-style
+    .mail
     {
         text-align:center;
-        color:white;
         font-size:15px;
-        font-weight:500;
         margin:20px 0px;
         order:3;
     }
-    .name-style
+    .name
     {
-        text-align:center;
-        color:white;
         font-size:45px;
-        font-weight:300;
         margin-top:190px;
     }
-    .name-style > span
-    {
-        font-weight:500;
-    }
 
-    .designation-style
+    .designation
     {
-        color:white;
+
         font-size:27px;
         font-weight:500;
         margin-top:20px;
-        text-align:center;
-    }
-   
-    .designation-style > span{
-        color:#4a90e4;
     }
 
     .image-section
     {
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
         margin-bottom:50px;
     }
-    .image-section > div
+    .image-section > img
     {
         width:470px;
         margin:10px 3px;
     }
     .description
     {
-        color:#cecece;
         font-size:28px;
-        font-weight:500;
-        text-align:center;
         margin-top:10px;
         margin-bottom:50px;
     }
 
-    .description > span{
-        color:#b8e985;
-    }
-
-    .logo-section
-    {
-        display:flex;
-        justify-content:space-around;
-        flex-wrap:wrap;
-    }
-
-    .logo-section > div
+    .logo-section > img
     {
         width:160px;
         margin-bottom:65px;
     }
 
     footer{
-        display:flex;
-        flex-direction:column;
         margin-top:50px;
-        justify-content:space-between;
     }
     
     .line-bar
     {
-        display:flex;
-        justify-content:space-around;
         width:60%;
         margin:50px auto;
-    }
-
-    .line-bar > hr
-    {
-        border:solid 0.5px white;
-        
     }
 
     .line-bar > hr:nth-child(1)
@@ -293,20 +238,16 @@ footer{
 
     .icon-section
     {
-        display:flex;
-        justify-content:space-between;
         width:95%;
         margin:25px auto;
     }
 
-    .icon-section > div{
+    .icon-section > img{
         width:50px;
     }
 
     .motto
     {
-        text-align:center;
-        font-size:20px;
         margin:22px 0px 35px;
     }
 
