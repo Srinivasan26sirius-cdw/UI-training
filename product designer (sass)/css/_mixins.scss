@@ -1,0 +1,17 @@
+%display-property
+{
+	display: flex;
+}
+@mixin font-property($align:center,$size:20px,$weight:500)
+{
+	text-align:$align;
+    font-size:$size;
+	font-weight:$weight;
+}
+@mixin flex-property($justify:space-between,$direction:row,$wrap:nowrap)
+{
+    @extend %display-property;
+    justify-content:$justify;
+	flex-direction:$direction;
+	flex-wrap:$wrap;
+}
