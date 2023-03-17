@@ -1,0 +1,161 @@
+@import"./_mixins";
+@import"./_variables";
+* {
+	background-color: $background-color_1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $color_1;
+	font-family: $font-family_1;
+}
+.outer-container {
+	width: 78%;
+	margin: auto;
+	@include flex-property($direction:column);
+}
+header {
+	@extend %display-property;
+	flex-direction:column;
+	margin-bottom: 140px;
+}
+.mail {
+	@include font-property($align:right,$size:25px);
+	color: $color_1;
+	margin-top: 35px;
+	margin-right: 10px;
+}
+.name {
+	@include font-property($size:130px,$weight:300);
+	color: $color_1;
+	margin-top: 50px;
+	>span {
+		font-weight: 500;
+	}
+}
+.designation {
+	color: $color_1;
+	@include font-property($size:40px);
+	margin-top: 20px;
+	>span {
+		color: $color_2;
+	}
+}
+.image-section {
+	@include flex-property($justify:space-around,$wrap:wrap);
+	margin-bottom: 150px;
+	>img {
+		width: 418px;
+		margin: 15px 13px;
+	}
+}
+.description {
+	color: $color_3;
+	@include font-property($size:45px);
+	margin-top: 150px;
+	margin-bottom: 100px;
+	>span {
+		color: $color_4;
+	}
+}
+.logo-section {
+	@include flex-property;
+	>img {
+		width: 180px;
+	}
+}
+footer {
+    @include flex-property($direction:column);
+	margin-top: 200px;
+}
+.line-bar {
+	@include flex-property($justify:space-around);
+	width: 22%;
+	margin: 50px auto;
+	>hr {
+		border: solid 1px #757575;
+		&:nth-child(1) {
+			width: 31px;
+		}
+		&:nth-child(2) {
+			width: 200px;
+		}
+	}
+}
+.icon-section {
+	@include flex-property;
+	width: 25%;
+	margin: 50px auto;
+	>img {
+		width: 55px;
+	}
+}
+.motto {
+	@include font-property($weight:450);
+	margin: 25px 0px;
+}
+@media only screen and (max-width:600px) {
+	.outer-container {
+		width: 90%;
+	}
+	header {
+		margin-bottom: 50px;
+	}
+	.mail {
+		text-align: center;
+		font-size: 15px;
+		margin: 20px 0px;
+		order: 3;
+	}
+	.name {
+		font-size: 45px;
+		margin-top: 190px;
+	}
+	.designation {
+		font-size: 27px;
+		font-weight: 500;
+		margin-top: 20px;
+	}
+	.image-section {
+		margin-bottom: 50px;
+		>img {
+			width: 470px;
+			margin: 10px 3px;
+		}
+	}
+	.description {
+		font-size: 28px;
+		margin-top: 10px;
+		margin-bottom: 50px;
+	}
+	.logo-section {
+		>img {
+			width: 160px;
+			margin-bottom: 65px;
+		}
+	}
+	footer {
+		margin-top: 50px;
+	}
+	.line-bar {
+		width: 60%;
+		margin: 50px auto;
+		>hr {
+			&:nth-child(1) {
+				width: 24px;
+			}
+			&:nth-child(2) {
+				width: 140px;
+			}
+		}
+	}
+	.icon-section {
+		width: 95%;
+		margin: 25px auto;
+		>img {
+			width: 50px;
+		}
+	}
+	.motto {
+		margin: 22px 0px 35px;
+	}
+}
